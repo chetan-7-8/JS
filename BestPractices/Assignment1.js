@@ -14,8 +14,11 @@ function sayHello() {
   // => Hello! is logged instantly... nothing happens 3 seconds later.
 
 
+  
+
   const ans = (firstName,secondName) => {
        return firstName.charAt(0)+secondName.charAt(0);
   };
 
   console.log(ans("chetan","singh"));
+
