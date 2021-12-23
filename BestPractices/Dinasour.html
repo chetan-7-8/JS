@@ -17,15 +17,15 @@
 
       const sect = document.querySelector('section');
       const para = document.createElement('p');
+      
       para.textContent="Hey chetan this side";
-
       sect.appendChild(para);
 
 
       const text = document.createTextNode(' — the premier source for web development knowledge.');
       const linkPara = document.querySelector('p');
-      para.appendChild(text);
-linkPara.appendChild(text);
-sect.appendChild(linkPara);
+      
+      linkPara.appendChild(text);
+      sect.appendChild(linkPara);
   </script>
 </html>
