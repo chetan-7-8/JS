@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    border: none;
+    padding: 0px;
+  }
+  
+  html, body{
+    margin : 0px;
+    background-color: white;
+    
+  }
+  
+  li{
+    cursor: pointer;
+  }
+  
+  
+  *::-webkit-scrollbar { 
+    display: none; 
+  }
+  ul, ol{
+    list-style: none;
+  }
+  h2{
+    text-align: center;
+  }
+  div{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .currency, .cost, .itemCount{
+    display: inline-block;
+  }
+  #table .cost{
+    border-right: 2px solid black;
+    padding-right: 5px;
+  }
+  .tableName, .dishName{
+    font-size: 29px;
+    font-weight: bold;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+  #table{
+    width: 400px;
+    padding: 10px;
+    border-right: 4px solid black;
+  }
+  p{
+    margin-right: 5px;
+  }
+  #menu{
+    width: calc(100vw - 400px);
+    padding: 10px;
+  }
+  li{
+    box-shadow: 1px 0px 1px 1px grey;
+    width: 95%;
+  }
+  #table li{
+    height: 250px;
+  }
+  #menu li{
+    height: 300px;
+    margin: 15px;
+    max-width: 370px;
+    color: black;
+  }
+  #menu ol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .dish-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 100%;
+    margin: 0px;
+  }
+  .dishName{
+    margin: 0px;
+  }
+  input{
+    height: 50px;
+    border-radius: 2px;
+    box-shadow: 2px 1px 2px 2px lightgray;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+  }
+  input::placeholder{
+    font-size: 15px;
+  }
+  input:focus{
+    outline : none;
+  }
+  #menu input{
+    height: 50px;
+    width: 100%;
+  }
+  section{
+    max-height: 100vh;
+  }
+  section ol{
+    overflow-y: scroll;
+    max-height: calc(100vh - 150px);
+    padding: 2px;
+  }
+  
+  
+  .popup-back{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-content: center;
+    backdrop-filter: brightness(60%);
+    display: none;
+  }
+  
+  .popup{
+    /* position: absolute; */
+    height: 600px;
+    width: 600px;
+    /* top: calc(50vh - 350px);
+    left: calc(50vw - 350px); */
+    border-radius: 10px 10px 0px 0px;
+    background-color: white;
+    position: relative;
+  }
+  
+  .popup header{
+    height: 65px;
+    width: 100%;
+    background-color: #2e2198;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px;
+    position: relative;
+  }
+  .popup header p{
+    margin : 0px;
+    font-size: 25px;
+  }
+  .popup header i{
+    color : white;
+    position : absolute;
+    right : 20px;
+    top : 12px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  table{
+    width: 100%;
+  }
+  
+  table tr *{
+    height: 30px;
+    font-size: 23px;
+    padding:  7px;
+    text-align: left;
+  }
+  
+  .popup footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(12, 12, 151);
+    padding-left: 20px;
+  }
+  .popup footer p{
+    font-size: 25px;
+    color: wheat;
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    #table{
+      width: 100vw;
+      height: 50vh;
+      border-bottom: 4px solid black;
+      border-right: none;
+    }
+    #menu{
+      width: 100vw;
+      height: 110vh;
+    }
+    section ol{
+      height: calc(50vh - 150px);
+    }
+    .popup{
+      width: 90%;
+    }
+  }

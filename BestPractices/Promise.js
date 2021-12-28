@@ -69,12 +69,12 @@ let promise = new Promise(function(resolve, reject) {
     //   }
 
 
-    //   loadScript("1.js")
-    //   .then(script=>loadScript("2.js"))
-    //   .then(script=>loadScript("3.js"))
-    //   .then(script=>{
-    //        // scripts are loaded, we can use functions declared there
-    //       one();
-    //       two();
-    //       three();
-    //   })
+      // loadScript("1.js")
+      // .then(script=>loadScript("2.js"))
+      // .then(script=>loadScript("3.js"))
+      // .then(script=>{
+      //      // scripts are loaded, we can use functions declared there
+      //     one();
+      //     two();
+      //     three();
+      // })
